@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: aquamarine;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+footer {
+    background-color: aquamarine;
+    padding: 30px 20px;
+}
+
+#about {
+    background-color: beige;
+    padding: 20px;
+    text-align: center;
+}
+
+#articles {
+    background-color: grey;
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+}
+ h2 {
+    text-align: center;
+ }
