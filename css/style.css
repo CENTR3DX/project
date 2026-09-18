@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 1em;
+    font-family: "Great Vibes", cursive;
+}
 header {
-    background-color: aquamarine;
+    background-color: rgb(142, 255, 127);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -14,19 +18,32 @@ footer {
 }
 
 #about {
-    background-color: beige;
+    background-color: rgb(247, 247, 242);
     padding: 20px;
     text-align: center;
 }
 
 #articles {
-    background-color: grey;
+    background-color: rgb(3, 130, 189);
     padding: 20px;
 }
 
 p {
     text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    margin-bottom: 3rem;
 }
+
  h2 {
     text-align: center;
+    font-size: 1.5rem;
  }
+
+ nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+ }
+ 
