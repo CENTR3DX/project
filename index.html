@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,6 +18,7 @@
             <ul>
                 <li><a href="#about">Введение</a></li>
                 <li><a href="#articles">Информация</a></li>
+                <li><a href="#registration">Регистрация</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +49,33 @@
                 <li><a href="article3.html">Изобретения</a></li>
                 <li><a href="article4.html">Факты</a></li>
                 <li><a href="article5.html">Список терминов</a></li>
+                <li><a href="article4.html">Факты</a></li>
+                <li><a href="article5.html">Список терминов</a></li>
+                <li><a href="article4.html">Факты</a></li>
+                <li><a href="article5.html">Список терминов</a></li>
             </ol>
+        </section>
+        <section id="registration">
+            <h2>Регистрация</h2>
+            <form class="form-reg" action="">
+                <label for="login">Введите логин</label><br>
+                <input type="text" id="login" name="login" placeholder="Логин" required><br>
+                <label for="pass">Введите пароль</label><br>
+                <input type="password" id="pass" name="password" placeholder="Пароль" required><br>
+                <label for="city">Выберите город</label>
+                <select name="city" id="city" required>
+                    <option value="" disabled selected>Выберите город</option>
+                    <option value="Chelyabinsk">Челябинск</option>
+                    <option value="Moscow">Москва</option>
+                    <option value="Saint-Petersburg">Санкт-Петербург</option>
+                </select><br>
+                <label for="comment">Введите комментарий</label><br>
+                <textarea name="comment" id="comment" placeholder="Комментарий" rows="5" cols="20"></textarea>
+                <input type="checkbox" id="argeement" name="agreement" required>
+                <label for="argeement">Согласие на обработку персональных данных</label>
+                <input type="submit" value="Зарегистрироваться"><br>
+                <input type="reset"><br>
+            </form>
         </section>
     </main>
     <footer>
@@ -58,6 +86,7 @@
         <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D1%80%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%D1%81,_%D0%9B%D0%B8%D0%BD%D1%83%D1%81"><img src="img/wikipedia-w-brands-solid-full.svg" alt="википедия" width="24" height="24"></a>
         <a target="_blank" href="https://ideanomics.ru/lectures/13931"><img src="img/hand-solid-full.svg" alt="рука" width="24" height="24"></a>
         <a target="_blank" href="https://habr.com/ru/news/1073386/"><img src="img/book-tanakh-solid-full.svg" alt="книга" width="24" height="24"></a>
+        <i class="bi bi-xbox"></i>
     </footer>
 </body>
 </html>

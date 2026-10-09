@@ -87,7 +87,80 @@ p {
  figcaption {
     margin-bottom: 25px;
  }
-
+ nav a:visited {
+    color:darkblue;
+}
+ nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+ }
+nav a:focus {
+    color:green;
+    transform: scale(1.2);
+}
+nav a:active {
+    color:red;
+}
+nav a {
+    color:purple;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+#articles li:nth-child(even) {
+    background-color: aqua;
+}
+h2::after {
+    content: "amazing!";
+    font-size: 12px;
+    margin-left: 10px;
+    color: red;
+}
+.bi-xbox {
+    color: green;
+    font-size: 32px;
+}
+#articles a::after {
+    content: "\F823";
+    font-family: "bootstrap-icons";
+    color: blueviolet;
+    margin-left: 20px;
+    text-decoration: none;
+}
+/*--------вёрстка формы--------*/
+.form-reg {
+    width: 170px;
+    margin: 20px auto;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 25px;
+}
+input {
+    background-color: lavender;
+    border: darkblue 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: darkblue;
+}
+input[type=submit] {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+}
+input[type=submit]:hover {
+    background-color: black;
+    cursor:pointer;
+}
+input[type=checkbox],
+input[type=radio] {
+    accent-color: red;
+}
+select {
+    width: 170px;
+}
+textarea {
+    width: 170px;
+} 
 
 
  
