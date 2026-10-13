@@ -107,9 +107,6 @@ nav a {
     display: inline-block;
     transition: 0.3s;
 }
-#articles li:nth-child(even) {
-    background-color: aqua;
-}
 h2::after {
     content: "amazing!";
     font-size: 12px;
@@ -160,7 +157,100 @@ select {
 }
 textarea {
     width: 170px;
-} 
+}
+#articles ol li a:hover {
+    color: yellow;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+#articles ol li a:focus {
+    color: green;
+    transform: scale(5);
+}
+#about a[target="_blank"]:hover {
+    color: crimson;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+#about a[target="_blank"]:focus {
+    color: green;
+    transform: scale(1.2);
+}
+footer a:hover {
+    color:green;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+footer a:focus {
+    color: green;
+    transform: scale(1.2);
+}
+#biography a:hover {
+    color: fuchsia;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+#biography a:focus {
+    color: green;
+    transform: scale(1.2);
+}
+#achievements a:hover {
+    color: gold;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+#achievements a:focus {
+    color: green;
+    transform: scale(1.2);
+}
+#facts a:hover {
+    color: aqua;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+#facts a:focus {
+    color: green;
+    transform: scale(1.2);
+}
+#articles li:nth-child(even) {
+    background-color: green;
+}
+#articles li:nth-child(odd) {
+    background-color: bisque;
+}
+#articles li:nth-child(5)::after {
+    content: " ВАЖНО!";
+    color: red;
+    font-size: 12px;
+}
+#about p::first-line {
+    letter-spacing: 10pt;
+}
+#biography p::first-line {
+    letter-spacing: 10pt;
+}
+#achievements p::first-line {
+    letter-spacing: 10pt;
+}
+#facts p::first-line {
+    letter-spacing: 10pt;
+}
+#inventions p::first-line {
+    letter-spacing: 10pt;
+}
+#terms p::first-line {
+    letter-spacing: 10pt;
+}
+#more p:lang(en) {
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+
+
+    
+
 
 
  
