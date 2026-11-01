@@ -287,21 +287,18 @@ h2::after {
     text-decoration: none;
 }
 /*--------вёрстка формы--------*/
-.form-reg {
-    width: 170px;
-    margin: 20px auto;
-    background-color: aqua;
-    border-radius: 20px;
-    padding: 25px;
+.contact-form {
+    background-color: rgb(132, 0, 255);
 }
-input {
-    background-color: rgb(255, 255, 255);
-    border: darkblue 1px solid;
-    border-radius: 5px;
+/* #registration input[type="text"] {
+    height: 20px;
+    width: 250px;
     padding: 5px;
-    color: darkblue;
-}
-input[type=submit] {
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #eddfff;
+} */
+/* input[type="submit"] {
     background-color: darkblue;
     color: white;
     padding: 10px;
@@ -313,13 +310,13 @@ input[type=submit]:hover {
 input[type=checkbox],
 input[type=radio] {
     accent-color: red;
-}
-select {
+} */
+/* select {
     width: 170px;
 }
 textarea {
     width: 170px;
-}
+} */
 #articles ol li a:hover {
     color: yellow;
     text-decoration: underline;
@@ -441,7 +438,7 @@ footer a:focus {
     max-width: 100%;
 }
 #registration {
-    background-color: yellow;
+    background-color: rgb(132, 0, 255);
     padding: 40px 20px;
     border-radius: 15px;
 }
@@ -523,6 +520,56 @@ td.textes {
     padding: 12px 8px;
     border-bottom: 2px solid #000;
     background-color: #ac9494;
+}
+.contact-form {
+    max-width: 320px; 
+    margin: 0 auto;
+}
+.form_item {
+    margin-bottom: 12px;
+    text-align: left;
+    color: white;
+    font-style: italic;
+}
+.form_item label {
+    display: block;
+    margin-bottom: 2px; 
+    font-size: 14px;
+}
+.form_item input[type="text"],
+.form_item input[type="email"],
+.form_item input[type="date"],
+.form_item input[type="tel"],
+.form_item select,
+.form_item textarea {
+    width: 280px;        
+    box-sizing: border-box;
+    padding: 4px 6px;   
+    border: 1px solid #ccc;
+    border: none;
+    font-style: normal;
+    background-color: #d9c1f8;
+}
+.form_item textarea {
+    resize: vertical;
+}
+.form_item_btn {
+    margin-top: 15px;
+    text-align: left;
+}
+.form_item_btn input[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #724d91;       
+    color: #310652;                  
+    border: none;       
+    font-style: italic;             
+    text-transform: uppercase;      
+    font-weight: bold;
+}
+.form_item_btn input[type="submit"]:hover {
+    background-color: #e5b4fc;       
 }
 
 

@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="#about">Введение</a></li>
                 <li><a href="#articles">Информация</a></li>
-                <li><a href="#registration">Регистрация</a></li>
+                <li><a href="#registration">Обратная связь</a></li>
             </ul>
         </nav>
     </header>
@@ -53,25 +53,44 @@
             </ol>
         </section>
         <section id="registration">
-            <h2>Регистрация</h2>
-            <form class="form-reg" action="">
-                <label for="login">Введите логин</label><br>
-                <input type="text" id="login" name="login" placeholder="Логин" required><br>
-                <label for="pass">Введите пароль</label><br>
-                <input type="password" id="pass" name="password" placeholder="Пароль" required><br>
-                <label for="city">Выберите город</label>
-                <select name="city" id="city" required>
-                    <option value="" disabled selected>Выберите город</option>
-                    <option value="Chelyabinsk">Челябинск</option>
-                    <option value="Moscow">Москва</option>
-                    <option value="Saint-Petersburg">Санкт-Петербург</option>
-                </select><br>
-                <label for="comment">Введите комментарий</label><br>
-                <textarea name="comment" id="comment" placeholder="Комментарий" rows="5" cols="20"></textarea>
-                <input type="checkbox" id="argeement" name="agreement" required>
-                <label for="argeement">Согласие на обработку персональных данных</label>
-                <input type="submit" value="Зарегистрироваться"><br>
-                <input type="reset"><br>
+            <h2>Обратная связь</h2>
+            <form class="contact-form">
+                <div class="form_item">
+                    <label for="topic">Тема</label>
+                <select name="topic" id="topic" required>
+                    <option value="1">Заказать услугу</option>
+                    <option value="2">Оставить отзыв/замечание</option>
+                    <option value="3">Предложить сотрудничество</option>
+                    <option value="4">Другое</option>
+                </select>
+                </div>
+                <div class="form_item">
+                    <label for="name">Имя</label>
+                    <input name="name" id="name" type="text" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="form_item">
+                    <label for="email">E-mail</label>
+                    <input name="email" id="email" type="email" placeholder="example@mail.ru" required>
+                </div>
+                <div class="form_item">
+                    <label for="messages">Текст сообщения</label>
+                    <textarea name="messages" id="messages" rows="6" placeholder="Введите текст сообщения..." required></textarea>
+                </div>
+                <div class="form_item">
+                    <label for="date">Желаемая дата ответа</label>
+                    <input name="date" id="date" type="date" required>
+                </div>
+                <div class="form_item">
+                    <label for="phone">Телефон</label>
+                    <input name="phone" id="phone" type="tel" placeholder="+7 (999) 999-99-99" required>
+                </div>
+                <div class="form_item checkbox_item">
+                    <input name="agreement" id="agreement" type="checkbox" required>
+                    <label for="agreement">Согласен с политикой конфиденциальности</label>
+                </div>
+                <div class="form_item_btn">
+                    <input type="submit" value="Отправить">
+                </div>
             </form>
         </section>
     </main>
